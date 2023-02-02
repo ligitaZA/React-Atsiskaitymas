@@ -16,11 +16,9 @@ body {
   background-image: url('./images/Dizainas\ be\ pavadinimo\ \(2\).png');
   width: 650px;
   height: 500px;
-  margin: auto;
-  padding: 100px auto;
+  margin: 0 auto;
   background-position: center;
   background-size: cover;
-
 }
 
 .logo {

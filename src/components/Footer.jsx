@@ -4,40 +4,40 @@ const Footer = () => {
       <footer>
     <div className="footer">
       <section id="left">
-        <p>Susisiekite</p>
+        <p>Contact Us</p>
         <div className="address">
           <div>
-            <i className="fa-regular fa-paper-plane"></i><a
-              href="mailto:info@palapiniumagnatai.lt">info@palapiniumagnatai.lt</a>
+            <i className="fa fa-mail-forward"></i><a
+              href="mailto:info@future.lt">info@future.gr</a>
               <br/>
             </div>
           <div>
-            <i className="fa-solid fa-phone"></i><p>+370 687 36973</p> 
+            <i className="fa fa-phone"></i><p>+30 287 36973</p> 
             <br/>
           </div>
           <div>
-            <i className="fa-solid fa-location-dot"></i><p>Svencelės g. 33, Svencelė Lietuva</p> 
+            <i className="fa fa-location-arrow"></i><p>Athens, Greece</p> 
             <br/>
           </div>
         </div>
       </section>
       <section id="middle">
-          <img src="./images/MicrosoftTeams-image.png" alt="" />
+          <div className="logoFooter"></div>
       </section>
       <section id="right">
         <div className="soc-networks">
-          <h3>Sekite mus</h3>
+          <h3>Follow Us</h3>
           <a href="#">
-            <i className="fa-brands fa-facebook-f fa-xl"></i></a>
+            <i className="fa fa-facebook"></i></a>
           <a href="#">
-            <i className="fa-brands fa-instagram fa-xl">
+            <i className="fa fa-instagram">
             </i></a>
         </div>
         </section>
     </div>
     
     <div className="copyrights">
-      <p>Copyrights © 2021 John Doe. All rights reserved.</p>
+      <p>Copyrights © 2023 FUTURE. All rights reserved.</p>
     </div>
   </footer>
     </>
