@@ -1,24 +1,33 @@
 @import url('./styles/footer.css');
 @import url('./styles/beforelogin.css');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
 body {
   margin: 0;
 }
 #root {
   height: 100vh;
 }
-.beforelogin {
-  background-image: url('./images/Dizainas\ be\ pavadinimo\ \(1\).png');
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
+.background{
+  background-color: #2FF3E0;
+  height: 65%;
+  padding: 100px;
+}
+.background .beforelogin {
+  background-image: url('./images/Dizainas\ be\ pavadinimo\ \(2\).png');
+  width: 650px;
+  height: 500px;
+  margin: auto;
+  padding: 100px auto;
   background-position: center;
   background-size: cover;
+
 }
+
 .logo {
   background-image: url('./images/logo.png');
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   background-position: center;
   background-size: cover;
 }

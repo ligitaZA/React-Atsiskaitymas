@@ -16,12 +16,12 @@ const Header = () => {
             <Link to="/">
               <div className="logo"></div>
             </Link>
-            <Link to='/login'>Login</Link>
-            <br />
-            <Link to='/register'>Register</Link>
+            <div className='formsBtns'>
+              <Link to='/login' className='login'>Login</Link>
+            <Link to='/register' className='register'>Register</Link>
+            </div>
           </div>
       } 
-      <hr />
      <Footer />
       <Outlet />
     </>

@@ -11,7 +11,10 @@ const Posts = () => {
   }
   const availablePosts = posts.filter(post => post.userId);
   if (!loggedInUser) {
-    return <div className="beforelogin"></div>;
+    return <>
+    <div className="background">
+      <div className="beforelogin"></div>
+    </div> ;</> 
   }
   return (
     <>
