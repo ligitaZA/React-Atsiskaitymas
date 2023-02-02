@@ -4,14 +4,15 @@ import { useContext } from "react";
 import Post from "./Post";
 
 const Posts = () => {
-
   const { posts } = useContext(PostContext);
-  const { users } = useContext(UserContext);
+  const { users, loggedInUser } = useContext(UserContext);
   if(!posts || !users) {
     return <div>Loading...</div>
   }
   const availablePosts = posts.filter(post => post.userId);
-
+  if (!loggedInUser) {
+    return <div className="beforelogin"></div>;
+  }
   return (
     <>
     <div className="posts">
@@ -24,7 +25,6 @@ const Posts = () => {
         )
       }
     </div>
-      
     </>
   );
 }
