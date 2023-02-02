@@ -1,0 +1,77 @@
+footer {
+  background-color: #fffb00f8;
+  padding-top: 10px;
+  margin-top: 5px;
+  color: #ff00ea;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+footer section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+footer #left {
+  padding: 5px;
+  line-height: 30px;
+}
+footer #left > p {
+  font-family: "Tavijar";
+  font-size: large;
+  margin: 10px auto;
+  letter-spacing: 2px;
+}
+footer i {
+  padding-right: 10px;
+}
+footer img {
+  height: 120px;
+  margin: 0 auto;
+}
+footer .address {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  padding-left: 10px;
+}
+footer .address div {
+  display: flex;
+  align-items: center;
+}
+footer .address div p,
+footer .address div a {
+  font-family: "Tavijar";
+  margin: 0;
+}
+footer section#right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  font-family: "Tavijar";
+  font-size: large;
+}
+footer .soc-networks {
+  text-align: center;
+}
+footer a {
+  color: inherit;
+}
+
+footer ul {
+  list-style-type: none;
+}
+.copyrights p {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 12px;
+}

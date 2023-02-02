@@ -2,6 +2,7 @@ import UserContext from '../../context/UserContext';
 import { useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import User from '../User/User';
+import Footer from '../Footer';
 
 const Header = () => {
   const { loggedInUser } = useContext(UserContext);
@@ -19,8 +20,9 @@ const Header = () => {
             <br />
             <Link to='/register'>Register</Link>
           </div>
-      }
+      } 
       <hr />
+     <Footer />
       <Outlet />
     </>
   );

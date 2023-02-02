@@ -1,3 +1,19 @@
+@import url('./styles/footer.css');
+@import url('./styles/beforelogin.css');
+body {
+  margin: 0;
+}
+#root {
+  height: 100vh;
+}
+.beforelogin {
+  background-image: url('./images/Dizainas\ be\ pavadinimo\ \(1\).png');
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+}
 .logo {
   background-image: url('./images/logo.png');
   border-radius: 50%;

@@ -11,18 +11,11 @@ const Post = ({ data }) => {
     <div className="post">
       <div className="userPart">
         <div className="user">
-          {postOwner && (
-            <img
-              className="avatar"
-              src={postOwner.avatar}
-              alt="user avatar"
-            />
-          )}
           {postOwner && <span>{postOwner.userName}</span>}</div>
       </div>
       <div className="newPost">
-        <h1>{data.heading}</h1>
-        <p>{data.content}</p>
+        <h1>{data.title}</h1>
+        <p>{data.description}</p>
       </div>
     </div>
   );

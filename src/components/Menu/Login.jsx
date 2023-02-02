@@ -10,7 +10,6 @@ const LogIn = () => {
   const { users,  setLoggedInUser  } = useContext(UserContext);
 
   const handleSubmit = async (values, setSubmitting ) => {
-      console.log(values)
     const loggedInUser = users.find(user => user.email === values.email && user.password === values.password);
     if (loggedInUser) {
       setLoggedInUser(loggedInUser);
@@ -22,7 +21,7 @@ const LogIn = () => {
   }
       
   const validationSchema = Yup.object().shape({
-    userName: Yup.string()
+    email: Yup.string()
       .required('Username is required'),
     password: Yup.string()
       .required('Password is required')

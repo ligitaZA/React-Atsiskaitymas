@@ -1,34 +1,10 @@
 {
   "users": [
     {
-      "email": "Jonukas",
-      "password": "11111111",
-      "passwordRepeat": "11111111",
-      "id": 1675328092767
-    },
-    {
       "email": "ligitazaicevaite@gmail.com",
       "password": "123456789",
       "passwordRepeat": "123456789",
       "id": 1675334055963
-    },
-    {
-      "email": "ligitazaicevait@gmail.com",
-      "password": "123456789",
-      "passwordRepeat": "12345678",
-      "id": 1675335075474
-    },
-    {
-      "email": "aaaa@gmail.com",
-      "password": "123456789",
-      "passwordRepeat": "123456789",
-      "id": 1675337562689
-    },
-    {
-      "email": "aaa@gmail.com",
-      "password": "12345678",
-      "passwordRepeat": "12345678",
-      "id": 1675337992631
     }
   ],
   "posts": [
@@ -36,6 +12,30 @@
       "id": 1,
       "body": "some comment",
       "postId": 1
+    },
+    {
+      "title": "",
+      "description": "",
+      "id": 1675340208093,
+      "userId": 1675334055963
+    },
+    {
+      "title": "labas",
+      "description": "dfhdfgh",
+      "id": 1675340340185,
+      "userId": 1675334055963
+    },
+    {
+      "title": "jgiklgh",
+      "description": "ghjkl,gjhkl,",
+      "id": 1675340366171,
+      "userId": 1675334055963
+    },
+    {
+      "title": "vhk,fchk,",
+      "description": "fchnk,cdfh,",
+      "id": 1675340380163,
+      "userId": 1675334055963
     }
   ]
 }
