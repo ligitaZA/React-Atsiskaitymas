@@ -7,19 +7,23 @@ const Header = () => {
   const { loggedInUser } = useContext(UserContext);
   return (
     <>
-    {
-        loggedInUser ? 
-        <User /> :
-        <div className="loginRegister">
-          <Link to='/login'>Login</Link>
-          <br />
-          <Link to='/register'>Register</Link>
-        </div>
-} 
+
+      {
+        loggedInUser ?
+          <User /> :
+          <div className="loginRegister">
+            <Link to="/">
+              <div className="logo"></div>
+            </Link>
+            <Link to='/login'>Login</Link>
+            <br />
+            <Link to='/register'>Register</Link>
+          </div>
+      }
       <hr />
       <Outlet />
     </>
   );
 }
- 
+
 export default Header;

@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 
 const Register = () => {
   const [formInputs] = useState({
-    userName: '',
+    email: '',
     password: '',
     passwordRepeat: ''
   });
@@ -16,36 +16,39 @@ const Register = () => {
   const navigate = useNavigate();
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
     try {
-    if (users.find(user => user.userName === values.userName)) {
-    setInvalidUsername(true);
-    } else {
-    let newUser = {
-    ...values,
-    id: Date.now()
-    };
-    const response = await fetch('http://localhost:5000/users', {
-    method: 'POST',
-    headers: {
-    'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(newUser)
-    });
-    const data = await response.json();
-    console.log(data);
-    addNewUser(newUser);
-    setLoggedInUser(newUser);
-    navigate('/');
-    setSubmitting(false);
-    resetForm();
-    }
+      if (users.find(user => user.email === values.email)) {
+        setInvalidUsername(true);
+      } else {
+        let newUser = {
+          ...values,
+          id: Date.now()
+        };
+        const response = await fetch('http://localhost:5000/users', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(newUser)
+        });
+        const data = await response.json();
+        console.log(data);
+        addNewUser(newUser);
+        setLoggedInUser(newUser);
+        navigate('/');
+        setSubmitting(false);
+        resetForm();
+      }
     } catch (error) {
-    console.error('Error:', error);
+      console.error('Error:', error);
     }
-    };
+  };
   const validationSchema = Yup.object({
-    userName: Yup.string()
-      .required('User name is required'),
-    password: Yup.string()
+    email: Yup.string()
+      .test('email-taken', 'Email is already taken', async value => {
+        const emailTaken = users.find(user => user.email === value);
+        return !emailTaken;
+      }),
+      password: Yup.string()
       .min(8, 'Password must be at least 8 symbols length.')
       .required('Password is required'),
     passwordRepeat: Yup.string()
@@ -53,12 +56,10 @@ const Register = () => {
       .required('Password repeat is required'),
     avatar: Yup.string()
       .url('Must be a valid url')
-  })
+  });
   return (
     <>
       <div className="register">
-
-        {invalidUsername && <div className="error-message">This username is already taken, please choose a different one</div>}
         <Formik
           validationSchema={validationSchema}
           onSubmit={(values, { setSubmitting, resetForm }) => handleSubmit(values, { setSubmitting, resetForm })}
@@ -67,21 +68,19 @@ const Register = () => {
           {({ errors, touched }) => (
             <Form>
               <label>
-                User name:
+                Email:
                 <Field
-                  name="userName"
+                  name="email"
                   type="text" />
-                {errors.userName && touched.userName ? (
-                  <div>{errors.userName}</div>
+                {errors.email && touched.email ? (
+                  <div>{errors.email}</div>
                 ) : null}
-
               </label>
               <label>
                 Password:
                 <Field
                   name="password"
-                  type="password" />
-                {errors.password && touched.password ? (
+                  type="password" />{errors.password && touched.password ? (
                   <div>{errors.password}</div>
                 ) : null}
               </label>
@@ -90,7 +89,7 @@ const Register = () => {
                 <Field
                   name="passwordRepeat"
                   type="password" />
-                {errors.passwordRepeat && touched.passwordRepeat ? (
+                  {errors.passwordRepeat && touched.passwordRepeat ? (
                   <div>{errors.passwordRepeat}</div>
                 ) : null}
               </label>

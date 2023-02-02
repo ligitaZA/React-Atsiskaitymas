@@ -1,23 +1,34 @@
 {
   "users": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "userName": "tolle",
-      "password": "12345678",
-      "passwordRepeat": "12345678",
-      "id": 1675325446210,
-      "level": "user",
-      "isBanned": false
-    },
-    {
-      "userName": "Jonukas",
+      "email": "Jonukas",
       "password": "11111111",
       "passwordRepeat": "11111111",
       "id": 1675328092767
+    },
+    {
+      "email": "ligitazaicevaite@gmail.com",
+      "password": "123456789",
+      "passwordRepeat": "123456789",
+      "id": 1675334055963
+    },
+    {
+      "email": "ligitazaicevait@gmail.com",
+      "password": "123456789",
+      "passwordRepeat": "12345678",
+      "id": 1675335075474
+    },
+    {
+      "email": "aaaa@gmail.com",
+      "password": "123456789",
+      "passwordRepeat": "123456789",
+      "id": 1675337562689
+    },
+    {
+      "email": "aaa@gmail.com",
+      "password": "12345678",
+      "passwordRepeat": "12345678",
+      "id": 1675337992631
     }
   ],
   "posts": [

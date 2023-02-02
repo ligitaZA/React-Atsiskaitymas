@@ -10,11 +10,11 @@ const LogIn = () => {
   const { users,  setLoggedInUser  } = useContext(UserContext);
 
   const handleSubmit = async (values, setSubmitting ) => {
-    const loggedInUser = users.find(user => user.userName === values.userName && user.password === values.password);
+      console.log(values)
+    const loggedInUser = users.find(user => user.email === values.email && user.password === values.password);
     if (loggedInUser) {
       setLoggedInUser(loggedInUser);
       navigate('/')
-      console.log(loggedInUser)
     } else {
       setFailedLogIn(true);
     }
@@ -33,7 +33,7 @@ const LogIn = () => {
       <div className="logIn">
         <Formik
           initialValues={{
-            userName: '',
+            email: '',
             password: ''
           }}
           validationSchema={validationSchema}
@@ -42,15 +42,15 @@ const LogIn = () => {
           {({ errors, touched, values, setValues, isSubmitting }) => (
             <Form>
               <div>
-                <label>Username:
+                <label>Email:
                   <Field 
-                    name='userName'
-                    value={values.userName} 
-                    onChange={(e)=>setValues({...values, userName:e.target.value})}
+                    name='email'
+                    value={values.email} 
+                    onChange={(e)=>setValues({...values, email:e.target.value})}
                   />
                   {
-                    errors.userName && touched.userName ? 
-                      <span>{errors.userName}</span>
+                    errors.email && touched.email ? 
+                      <span>{errors.email}</span>
                       : null
                   }
                 </label>
