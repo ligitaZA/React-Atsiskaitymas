@@ -32,10 +32,10 @@ footer #left > p {
 footer i {
   padding-right: 10px;
 }
-footer .logoFooter {
- background-image: url('../images/by\ future.org\ \(1\).png');
- height: 60px;
- width: 60px;
+footer .logo {
+  border: none;
+ height: 100px;
+ width: 200px;
 }
 footer .address {
   display: flex;
@@ -79,6 +79,5 @@ footer ul {
 .copyrights p {
   margin: 0 auto;
   text-align: center;
-  padding-top: 30px;
   font-size: 12px;
 }

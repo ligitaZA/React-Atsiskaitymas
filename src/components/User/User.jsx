@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 
 const User = () => {
-  const { loggedInUser, setLoggedInUser } = useContext(UserContext);
+  const { setLoggedInUser } = useContext(UserContext);
 
   const navigation = useNavigate();
 

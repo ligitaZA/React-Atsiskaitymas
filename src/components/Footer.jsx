@@ -21,17 +21,13 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <section id="middle">
-          <div className="logoFooter"></div>
-      </section>
+          <div className="logo"></div>
       <section id="right">
         <div className="soc-networks">
           <h3>Follow Us</h3>
-          <a href="#">
-            <i className="fa fa-facebook"></i></a>
-          <a href="#">
+            <i className="fa fa-facebook"></i>
             <i className="fa fa-instagram">
-            </i></a>
+            </i>
         </div>
         </section>
     </div>

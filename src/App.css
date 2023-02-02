@@ -9,14 +9,14 @@ body {
 }
 .background{
   background-color: #2FF3E0;
-  height: 65%;
-  padding: 100px;
+  height: 90%;
+  margin: 0 auto;
 }
 .background .beforelogin {
   background-image: url('./images/Dizainas\ be\ pavadinimo\ \(2\).png');
   width: 650px;
   height: 500px;
-  margin: 0 auto;
+  margin: auto;
   background-position: center;
   background-size: cover;
 }
