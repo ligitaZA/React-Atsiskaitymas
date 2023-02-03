@@ -12,7 +12,7 @@ const Posts = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 300);
+    }, 1000);
   }, [posts, users, loggedInUser]);
 
   if (!loggedInUser) {
@@ -24,14 +24,14 @@ const Posts = () => {
   }
 
   if (!posts || !users || isLoading) {
-    return <div>Loading...</div>;
+    return <div className="loading"></div>;
   }
 
   const availablePosts = posts.filter(post => post.userId);
   return (
     <>
 
-    <h1 className="mainH1">Tips for you mental health</h1>
+    <h1 className="mainH1">Tips for your mental health</h1>
       <div className="posts">
       {
         availablePosts.length > 0 ? 
@@ -41,8 +41,7 @@ const Posts = () => {
             data={post}
           />  
         )
-        : <div className="noPosts">
-        </div>
+        : <div className="noPosts"></div>
       }
     </div>
     
