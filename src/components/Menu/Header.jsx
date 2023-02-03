@@ -8,7 +8,6 @@ const Header = () => {
   const { loggedInUser } = useContext(UserContext);
   return (
     <>
-
       {
         loggedInUser ?
           <User /> :
@@ -18,12 +17,12 @@ const Header = () => {
             </Link>
             <div className='formsBtns'>
               <Link to='/login' className='login'>Login</Link>
-            <Link to='/register' className='register'>Register</Link>
+              <Link to='/register' className='register'>Register</Link>
             </div>
           </div>
-      } 
+      }
       <Outlet />
-     <Footer />
+      <Footer />
     </>
   );
 }

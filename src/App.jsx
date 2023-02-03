@@ -10,14 +10,14 @@ import Posts from './components/Postai/Posts';
 const App = () => {
   return (
     <>
-    <Routes>
-      <Route element={<Header />}>
-        <Route path='/' element={<Posts />} />
-        <Route path='/register' element={<Register />}/>
-        <Route path='/login' element={<Login />}/>
-        <Route path='/newPost' element={<NewPostForm />}/>
-      </Route>
-    </Routes>
+      <Routes>
+        <Route element={<Header />}>
+          <Route path='/' element={<Posts />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/newPost' element={<NewPostForm />} />
+        </Route>
+      </Routes>
     </>
   );
 }

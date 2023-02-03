@@ -7,9 +7,9 @@ import * as Yup from 'yup';
 const LogIn = () => {
   const [failedLogIn, setFailedLogIn] = useState(false);
   const navigate = useNavigate();
-  const { users,  setLoggedInUser  } = useContext(UserContext);
+  const { users, setLoggedInUser } = useContext(UserContext);
 
-  const handleSubmit = async (values, setSubmitting ) => {
+  const handleSubmit = async (values, setSubmitting) => {
     const loggedInUser = users.find(user => user.email === values.email && user.password === values.password);
     if (loggedInUser) {
       setLoggedInUser(loggedInUser);
@@ -19,14 +19,14 @@ const LogIn = () => {
     }
     setSubmitting(false);
   }
-      
+
   const validationSchema = Yup.object().shape({
     email: Yup.string()
       .required('Username is required'),
     password: Yup.string()
       .required('Password is required')
   });
- 
+
   return (
     <>
       <div className="logIn">
@@ -43,13 +43,13 @@ const LogIn = () => {
               <div>
                 <h1>Log In</h1>
                 <label>Email:
-                  <Field 
+                  <Field
                     name='email'
-                    value={values.email} 
-                    onChange={(e)=>setValues({...values, email:e.target.value})}
+                    value={values.email}
+                    onChange={(e) => setValues({ ...values, email: e.target.value })}
                   />
                   {
-                    errors.email && touched.email ? 
+                    errors.email && touched.email ?
                       <span>{errors.email}</span>
                       : null
                   }
@@ -57,14 +57,14 @@ const LogIn = () => {
               </div>
               <div>
                 <label>Password:
-                  <Field 
-                  name='password'
-                  type='password' 
-                  value={values.password} 
-                  onChange={(e)=>setValues({...values, password:e.target.value})}
+                  <Field
+                    name='password'
+                    type='password'
+                    value={values.password}
+                    onChange={(e) => setValues({ ...values, password: e.target.value })}
                   />
                   {
-                    errors.password && touched.password ? 
+                    errors.password && touched.password ?
                       <span>{errors.password}</span>
                       : null
                   }
@@ -79,7 +79,6 @@ const LogIn = () => {
             </Form>
           )}
         </Formik>
-
       </div>
     </>
   );

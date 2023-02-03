@@ -21,14 +21,11 @@ const User = () => {
       </div>
       <div className="managingUsers">
         <div className="editPost">
-        
-        <Link to="/newPost">Add New Post</Link>
+          <Link to="/newPost">Add New Post</Link>
         </div>
-       
         <button className="logOut" onClick={() => logOutUser()}>Log Out</button>
-        </div>
-        
       </div>
+    </div>
   );
 }
 export default User;

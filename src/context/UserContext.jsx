@@ -10,20 +10,18 @@ const UserProvider = ({ children }) => {
 
   useEffect(() => {
     fetch('http://localhost:5000/users')
-    .then(res => res.json())
-    .then(data => {
+      .then(res => res.json())
+      .then(data => {
         console.log(data);
         setUsers(data);
       }).catch(error => {
         console.error('Error:', error);
-    });
+      });
   }, []);
 
-  //pridedamas naujas vartotojas i masyva
   const addNewUser = (newUser) => {
     setUsers([...users, newUser]);
   }
-
 
   return (
     <UserContext.Provider

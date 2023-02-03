@@ -29,26 +29,26 @@ const NewPostForm = () => {
 
   return (
     <>
-    <div className="newForm">
-      <form onSubmit={handleSubmit}>
-      <h1>Add New Post</h1>
-        <label>
-          Title:
-          <input type="text" name="title"
-            value={formInputs.title}
-            onChange={(e) => setFormInputs({...formInputs, title:e.target.value})}
-          />
-        </label>
-        <label>
-          Description:
-          <textarea className="textarea" type="text" name="description"
-            value={formInputs.description}
-            onChange={(e) => setFormInputs({...formInputs, description:e.target.value})}
-          />
-        </label>
-        <button type="submit" className="button">Create new Post</button>
-      </form>
-    </div>
+      <div className="newForm">
+        <form onSubmit={handleSubmit}>
+          <h1>Add New Post</h1>
+          <label>
+            Title:
+            <input type="text" name="title"
+              value={formInputs.title}
+              onChange={(e) => setFormInputs({ ...formInputs, title: e.target.value })}
+            />
+          </label>
+          <label>
+            Description:
+            <textarea className="textarea" type="text" name="description"
+              value={formInputs.description}
+              onChange={(e) => setFormInputs({ ...formInputs, description: e.target.value })}
+            />
+          </label>
+          <button type="submit" className="button">Create new Post</button>
+        </form>
+      </div>
     </>
   );
 }

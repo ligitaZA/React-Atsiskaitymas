@@ -8,7 +8,7 @@ const Posts = () => {
   const { posts } = useContext(PostContext);
   const { users, loggedInUser } = useContext(UserContext);
   const [isLoading, setIsLoading] = useState(true);
-  
+
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
@@ -30,24 +30,20 @@ const Posts = () => {
   const availablePosts = posts.filter(post => post.userId);
   return (
     <>
-
-    <h1 className="mainH1">Tips for your mental health</h1>
+      <h1 className="mainH1">Tips for your mental health</h1>
       <div className="posts">
-      {
-        availablePosts.length > 0 ? 
-        availablePosts.map(post => 
-          <Post 
-            key={post.id}
-            data={post}
-          />  
-        )
-        : <div className="noPosts"></div>
-      }
-    </div>
-    
-    
+        {
+          availablePosts.length > 0 ?
+            availablePosts.map(post =>
+              <Post
+                key={post.id}
+                data={post}
+              />
+            )
+            : <div className="noPosts"></div>
+        }
+      </div>
     </>
-    
   );
 }
 

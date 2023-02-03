@@ -43,19 +43,12 @@ const Register = () => {
     }
   };
   const validationSchema = Yup.object({
-    email: Yup.string()
-      .test('email-taken', 'Email is already taken', async value => {
-        const emailTaken = users.find(user => user.email === value);
-        return !emailTaken;
-      }),
-      password: Yup.string()
+    password: Yup.string()
       .min(8, 'Password must be at least 8 symbols length.')
       .required('Password is required'),
     passwordRepeat: Yup.string()
       .oneOf([Yup.ref('password'), null], 'Passwords must match')
       .required('Password repeat is required'),
-    avatar: Yup.string()
-      .url('Must be a valid url')
   });
   return (
     <>
@@ -73,27 +66,27 @@ const Register = () => {
                 <Field
                   name="email"
                   type="text" />
-                {errors.email && touched.email ? (
-                  <span>{errors.email}</span>
-                ) : null}
               </label>
               <label>
                 Password:
                 <Field
                   name="password"
                   type="password" />{errors.password && touched.password ? (
-                  <span>{errors.password}</span>
-                ) : null}
+                    <span>{errors.password}</span>
+                  ) : null}
               </label>
               <label>
                 Repeat Password:
                 <Field
                   name="passwordRepeat"
                   type="password" />
-                  {errors.passwordRepeat && touched.passwordRepeat ? (
+                {errors.passwordRepeat && touched.passwordRepeat ? (
                   <span>{errors.passwordRepeat}</span>
                 ) : null}
               </label>
+              {invalidUsername ? (
+                <span>Email is already taken!</span>
+              ) : null}
               <button type="submit">Register</button>
             </Form>
           )}
