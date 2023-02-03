@@ -59,7 +59,7 @@ const Register = () => {
   });
   return (
     <>
-      <div className="register">
+      <div className="registrationForm">
         <Formik
           validationSchema={validationSchema}
           onSubmit={(values, { setSubmitting, resetForm }) => handleSubmit(values, { setSubmitting, resetForm })}
@@ -67,13 +67,14 @@ const Register = () => {
         >
           {({ errors, touched }) => (
             <Form>
+              <h1>Register</h1>
               <label>
                 Email:
                 <Field
                   name="email"
                   type="text" />
                 {errors.email && touched.email ? (
-                  <div>{errors.email}</div>
+                  <span>{errors.email}</span>
                 ) : null}
               </label>
               <label>
@@ -81,7 +82,7 @@ const Register = () => {
                 <Field
                   name="password"
                   type="password" />{errors.password && touched.password ? (
-                  <div>{errors.password}</div>
+                  <span>{errors.password}</span>
                 ) : null}
               </label>
               <label>
@@ -90,7 +91,7 @@ const Register = () => {
                   name="passwordRepeat"
                   type="password" />
                   {errors.passwordRepeat && touched.passwordRepeat ? (
-                  <div>{errors.passwordRepeat}</div>
+                  <span>{errors.passwordRepeat}</span>
                 ) : null}
               </label>
               <button type="submit">Register</button>

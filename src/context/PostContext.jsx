@@ -5,7 +5,6 @@ const PostContext = createContext();
 const PostProvider = ({ children }) => {
 
   const [posts, setPosts] = useState([]);
-
   useEffect(() => {
     const fetchData = async () => {
     try {
@@ -20,8 +19,7 @@ const PostProvider = ({ children }) => {
     }
     fetchData();
     }, []);
-    
-    
+  
     const addNewPost = async (newPost) => {
     try {
     const res = await fetch('http://localhost:5000/posts', {

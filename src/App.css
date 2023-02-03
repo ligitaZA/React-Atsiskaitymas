@@ -1,14 +1,17 @@
 @import url('./styles/footer.css');
 @import url('./styles/beforelogin.css');
+@import url('./styles/header.css');
+@import url('./styles/logIn.css');
+@import url('./styles/registration.css');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
 body {
   margin: 0;
 }
 #root {
   height: 100vh;
+  background-color: #2FF3E0;
 }
 .background{
-  background-color: #2FF3E0;
   height: 90%;
   margin: 0 auto;
 }

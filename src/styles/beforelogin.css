@@ -1,6 +1,6 @@
 .loginRegister {
   background: rgb(235,87,82);
-background: linear-gradient(90deg, rgba(235,87,82,1) 0%, rgba(255,0,179,1) 0%, rgba(0,255,181,1) 100%);
+  background: linear-gradient(90deg, rgba(235,87,82,1) 0%, rgba(255,0,179,1) 0%, rgba(0,255,181,1) 100%);
   display: flex;
   justify-content: space-between;
   padding: 8px 70px;

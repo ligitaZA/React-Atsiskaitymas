@@ -1,0 +1,57 @@
+.headerUser {
+  background: rgb(235,87,82);
+  background: linear-gradient(90deg, rgba(235,87,82,1) 0%, rgba(255,0,179,1) 0%, rgba(0,255,181,1) 100%);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 70px;
+  align-items: center;
+  border-bottom: 2px solid rgb(251, 255, 0);
+  
+}
+.headerUser .managingUsers {
+  display: flex;
+  gap: 10px;
+}
+.headerUser .managingUsers .editPost, .logOut {
+  font-family: 'Cinzel';
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 20px;
+  background-color: #FA26A0;
+  color: #F8D210;
+  border-radius: 20px;
+  border: none;
+}
+
+.headerUser .managingUsers .editPost a {
+  text-decoration: none;
+  color: #F8D210;
+}
+.headerUser .managingUsers .editPost:hover, .logOut:hover {
+  background-color: #F8D210;
+  color: #FA26A0;
+  transition: ease 0.3s;
+}
+.headerUser .managingUsers .editPost a:hover {
+  color: #FA26A0;
+}
+.headerUser .homePart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.headerUser .homePart a {
+  font-family: 'Cinzel';
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 20px;
+  background-color: #FA26A0;
+  color: #F8D210;
+  border-radius: 20px;
+  border: none;
+}
+.headerUser .homePart a:hover{
+  background-color: #F8D210;
+  color: #FA26A0;
+  transition: ease 0.3s;
+}

@@ -15,8 +15,8 @@ const User = () => {
   return (
     <div className="headerUser">
       <div className="homePart">
-        <Link to="/">
         <div className="logo"></div>
+        <Link to="/">HOME
         </Link>
       </div>
       <div className="managingUsers">

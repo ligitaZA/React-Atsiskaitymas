@@ -41,6 +41,7 @@ const LogIn = () => {
           {({ errors, touched, values, setValues, isSubmitting }) => (
             <Form>
               <div>
+                <h1>Log In</h1>
                 <label>Email:
                   <Field 
                     name='email'
