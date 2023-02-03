@@ -31,6 +31,7 @@ const NewPostForm = () => {
     <>
     <div className="newForm">
       <form onSubmit={handleSubmit}>
+      <h1>Add New Post</h1>
         <label>
           Title:
           <input type="text" name="title"
@@ -45,7 +46,7 @@ const NewPostForm = () => {
             onChange={(e) => setFormInputs({...formInputs, description:e.target.value})}
           />
         </label>
-        <input type="submit" className="button" value="Create new Post" />
+        <button type="submit" className="button">Create new Post</button>
       </form>
     </div>
     </>

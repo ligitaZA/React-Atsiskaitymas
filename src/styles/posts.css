@@ -1,0 +1,119 @@
+
+.posts, .newForm {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  background-color: inherit;
+  padding-bottom: 50px;
+}
+.posts .newPost div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.posts .newPost {
+  display: flex;
+  background-color: rgba(248, 235, 235, 0.699);
+  flex-direction: column;
+  width: 400px;
+  padding: 10px;
+  position: relative;
+  font-family: 'Cinzel';
+}
+.posts .newPost img {
+  height: 30px;
+}
+.posts .newPost::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  border: 5px solid;
+  border-image: linear-gradient(90deg, rgba(235,87,82,1) 0%, rgba(243,255,0,1) 0%, rgba(248,203,71,1) 42%, rgba(251,114,238,1) 67%, rgba(255,0,170,1) 100%);
+  border-image-slice: 1;
+}
+.posts .newPost h1 {
+  color: rgb(212, 0, 255);
+}
+.posts .newPost p {
+  border-top: 1px solid rgb(255, 230, 0);
+  padding: 10px 0;
+  margin: 0;
+}
+
+.newForm {
+  margin: 100px auto;
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  background-color: #c117f5;
+  border: #FA26A0 3px solid;
+  border-radius: 20px;
+}
+.newForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin: 10px auto;
+}
+.newForm form label {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Cinzel';
+  font-weight: bold;
+  justify-content: center;
+  width: 90%;
+  margin: 10px;
+}
+.newForm form label input, textarea {
+  height: 23px;
+  background-color: #ffffffd3;
+  border: none;
+  width: 100%;
+}
+.newForm form label textarea{
+  height: 150px;
+}
+.newForm form button {
+  font-family: 'Cinzel';
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 5px 25px;
+  background-color: #FA26A0;
+  color: #F8D210;
+  border-radius: 20px;
+  border: none;
+  width: 80%;
+  align-self: center;
+  cursor: pointer;
+}
+.newForm form button:hover{
+  background-color: #F8D210;
+  color: #FA26A0;
+  transition: ease 0.3s;
+}
+.newForm h1 {
+  text-align: center;
+  margin: 0;
+  color: #F8D210;
+}
+.noPosts {
+  background-image: url('../images/Dizainas\ be\ pavadinimo\ \(3\).png');
+  width: 650px;
+  height: 500px;
+  margin: 10px auto;
+  background-position: center;
+  background-size: cover;
+}
+.mainH1 {
+  text-align: center;
+  margin-top: 100px;
+  color: #FA26A0;
+}

@@ -29,16 +29,26 @@ const Posts = () => {
 
   const availablePosts = posts.filter(post => post.userId);
   return (
-    <div className="posts">
+    <>
+
+    <h1 className="mainH1">Tips for you mental health</h1>
+      <div className="posts">
       {
+        availablePosts.length > 0 ? 
         availablePosts.map(post => 
           <Post 
             key={post.id}
             data={post}
           />  
         )
+        : <div className="noPosts">
+        </div>
       }
     </div>
+    
+    
+    </>
+    
   );
 }
 

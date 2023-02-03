@@ -6,7 +6,9 @@
   padding: 8px 70px;
   align-items: center;
   border-bottom: 2px solid rgb(251, 255, 0);
-  
+  width: 90%;
+  position: fixed;
+  z-index: 1;
 }
 .headerUser .managingUsers {
   display: flex;
@@ -21,6 +23,7 @@
   color: #F8D210;
   border-radius: 20px;
   border: none;
+  
 }
 
 .headerUser .managingUsers .editPost a {

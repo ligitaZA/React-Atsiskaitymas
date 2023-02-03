@@ -1,10 +1,7 @@
 footer {
   font-family: 'Cinzel';
   background-color: #fffb00f8;
-  padding-top: 10px;
   color: #ff00ea;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 .footer {
@@ -25,9 +22,11 @@ footer #left {
 }
 footer #left > p {
   font-family: 'Cinzel';;
-  font-size: 30px;
-  margin: 10px auto;
+  font-size: 20px;
+  margin: 0 auto;
+  padding-top: 5px;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 footer i {
   padding-right: 10px;
@@ -35,7 +34,7 @@ footer i {
 footer .logo {
   border: none;
  height: 100px;
- width: 200px;
+ width: 180px;
 }
 footer .address {
   display: flex;
@@ -46,6 +45,7 @@ footer .address {
 footer .address div {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 footer .address div p,
 footer .address div a {
@@ -61,13 +61,14 @@ footer section#right {
   font-size: large;
 }
 footer section#right h3 {
-  font-size: 30px;
+  font-size: 20px;
+  margin: 0;
 }
 footer .soc-networks {
   text-align: center;
 }
 footer .soc-networks i {
-  font-size: 30px;
+  font-size: 20px;
 }
 footer a {
   color: inherit;

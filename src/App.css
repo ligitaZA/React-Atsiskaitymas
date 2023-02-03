@@ -3,13 +3,19 @@
 @import url('./styles/header.css');
 @import url('./styles/logIn.css');
 @import url('./styles/registration.css');
+@import url('./styles/posts.css');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+
 body {
   margin: 0;
+  height: 100%;
 }
 #root {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #2FF3E0;
+  height: 100vh;
 }
 .background{
   height: 90%;
@@ -19,7 +25,7 @@ body {
   background-image: url('./images/Dizainas\ be\ pavadinimo\ \(2\).png');
   width: 650px;
   height: 500px;
-  margin: auto;
+  margin: 10px auto;
   background-position: center;
   background-size: cover;
 }

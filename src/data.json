@@ -5,49 +5,49 @@
       "password": "123456789",
       "passwordRepeat": "123456789",
       "id": 1675334055963
+    },
+    {
+      "email": "ligitazaicevaite@gmail.co",
+      "password": "12345678",
+      "passwordRepeat": "12345678",
+      "id": 1675426029375
     }
   ],
   "posts": [
     {
-      "title": "dfgf",
-      "description": "gbfgb",
-      "id": 1675405000463,
+      "title": "Take a Break",
+      "description": "Sometimes just walking away from something for a few minutes can help when you’re feeling stressed, overworked, burned out, or exhausted. Step away from what you are working on and give yourself some time to think about something else. ",
+      "id": 1675424994129,
       "userId": 1675334055963
     },
     {
-      "title": "etfgsg",
-      "description": "sfgb",
-      "id": 1675405906701,
+      "title": "Go for a Walk",
+      "description": "The Centers for Disease Control and Prevention (CDC) recommends that adults over the age of 18 get at least 150 minutes of exercise each week. Getting out and moving for a little more than 20 minutes a day is not only good for your physical health and longevity, it's also a great way to feel better in the here and now.",
+      "id": 1675425009480,
       "userId": 1675334055963
     },
     {
-      "title": "gdfg",
-      "description": "fgb",
-      "id": 1675405934063,
+      "title": "Crank Up the Music",
+      "description": "Listening to music can be an enjoyable experience, but there is also evidence that music has psychological benefits including having an influence on your moods. One 2013 study found that listening to upbeat songs could improve happiness and boost mood relatively quickly.",
+      "id": 1675425023208,
       "userId": 1675334055963
     },
     {
-      "title": "dfsdf",
-      "description": "fdgsv",
-      "id": 1675405943521,
+      "title": "Do Something Nice for Someone Else",
+      "description": "",
+      "id": 1675425034094,
       "userId": 1675334055963
     },
     {
-      "title": "vhk,fchk,",
-      "description": "gbvb",
-      "id": 1675406210448,
+      "title": "Talk to a Friend",
+      "description": "When you are feeling stuck in a negative mindset, sometimes just spending a few minutes chatting or texting with a good friend is enough to put you in a better state of mind. Social support is a key factor in emotional well-being. Research has found that lack of social support is linked to a number of negative outcomes including increased loneliness and decreased resilience to stress.",
+      "id": 1675425049866,
       "userId": 1675334055963
     },
     {
-      "title": "vcvb",
-      "description": "cvbc",
-      "id": 1675406215963,
-      "userId": 1675334055963
-    },
-    {
-      "title": "xcvxv",
-      "description": "xcvxcv",
-      "id": 1675408011502,
+      "title": "Plan Something",
+      "description": "According to one study, researchers found that people who are able to balance living in the here and now with planning for the future are more resistant to negative moods and resilient in the face of stress.8﻿﻿﻿ The study looked at two different ways of managing stress: mindfulness and proactive coping.",
+      "id": 1675425067997,
       "userId": 1675334055963
     }
   ]

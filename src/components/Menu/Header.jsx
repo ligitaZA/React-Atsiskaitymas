@@ -22,8 +22,8 @@ const Header = () => {
             </div>
           </div>
       } 
-     <Footer />
       <Outlet />
+     <Footer />
     </>
   );
 }
